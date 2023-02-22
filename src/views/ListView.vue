@@ -15,14 +15,24 @@ export default {
         input: {
             name: ''
         }
-    })
+    }),
+    //declare methods
+    methods: {
+        //add list
+        addList(){
+            this.list.push({...this.input})
+            // this.input = {
+            //     name: ''
+            // }
+        }
+    }
 }
 </script>
 <template>
     <div>
         <h1>This is a list page</h1>
 
-        <input type="text" v-model="input.name" placeholder="Input Name">
+        <input type="text" v-model="input.name" placeholder="Input Name" @keyup.enter="()=>addList()"/>
 
         <ol>
             <template v-for ="(item,index) in list" :key="index">
