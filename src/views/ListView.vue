@@ -29,6 +29,10 @@ export default {
   }),
   //declare methods
   methods: {
+    //reset form
+    resetForm() {
+      Object.assign(this.input, initialValue);
+    },
     //add list
     addList() {
       if (this.input.name == '') {
@@ -37,10 +41,11 @@ export default {
         this.list.push({ ...this.input });
       }
 
-      //   this.list.push({ ...this.input });
-
-      //assign object based on another object
-      Object.assign(this.input, initialValue);
+      this.resetForm();
+    },
+    submitForm() {
+      this.list = [...this.list, { ...this.input }];
+      this.resetForm();
     },
   },
 };
@@ -55,13 +60,18 @@ export default {
       @keyup.enter="() => addList()"
     /> -->
 
+    <form @submit.prevent="() => submitForm()" method="post">
+      <base-input v-model="input.name" placeholder="todo name"></base-input>
+      <br />
+      <base-input
+        v-model="input.description"
+        placeholder="todo deskripsi"
+      ></base-input>
+
+      <button type="submit">Add Todo</button>
+    </form>
+
     <!-- <BaseInput></BaseInput> -->
-    <base-input v-model="input.name" placeholder="todo name"></base-input>
-    <br />
-    <base-input
-      v-model="input.description"
-      placeholder="todo deskripsi"
-    ></base-input>
 
     <ol>
       <template v-for="(item, index) in list" :key="index">
