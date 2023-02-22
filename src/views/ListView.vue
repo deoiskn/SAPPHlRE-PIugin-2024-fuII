@@ -1,4 +1,9 @@
 <script>
+//set initial value
+const initialValue = {
+    name: ''
+}
+
 export default {
     name: 'ListView',
     //declare data
@@ -12,19 +17,18 @@ export default {
         }
         ],
         //input data
-        input: {
-            name: ''
-        }
+        input: {...initialValue}
     }),
     //declare methods
     methods: {
         //add list
         addList(){
             this.list.push({...this.input})
-            // this.input = {
-            //     name: ''
-            // }
+
+            //assign object based on another object
+            Object.assign(this.input, initialValue)
         }
+
     }
 }
 </script>
