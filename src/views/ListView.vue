@@ -1,4 +1,6 @@
 <script>
+import BaseInput from '../components/BaseInput.vue';
+
 //set initial value
 const initialValue = {
   name: '',
@@ -8,6 +10,10 @@ const initialValue = {
 
 export default {
   name: 'ListView',
+  //declare componen
+  components: {
+    BaseInput,
+  },
   //declare data
   data: () => ({
     list: [
@@ -42,13 +48,20 @@ export default {
 <template>
   <div>
     <h1>This is a list page</h1>
-
-    <input
+    <!-- <input
       type="text"
       v-model="input.name"
       placeholder="Input Name"
       @keyup.enter="() => addList()"
-    />
+    /> -->
+
+    <!-- <BaseInput></BaseInput> -->
+    <base-input v-model="input.name" placeholder="todo name"></base-input>
+    <br />
+    <base-input
+      v-model="input.description"
+      placeholder="todo deskripsi"
+    ></base-input>
 
     <ol>
       <template v-for="(item, index) in list" :key="index">
